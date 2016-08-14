@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TabhostActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/id_rl_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+        <ImageView
+            android:id="@+id/id_iv_0"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/ic_assignment_ind_black_36dp"/>
+        <RelativeLayout
+            android:id="@+id/id_rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/id_iv_0"
+            android:layout_toRightOf="@+id/id_iv_0"
+            android:paddingLeft="20dip"
+            android:paddingRight="15dip"
+            android:layout_marginBottom="3dp" >
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:progressDrawable="@drawable/progress_holo_light"
+                android:thumb="@drawable/ic_seekbar_thumb"/>
+        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/id_rl_1"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/ic_skip_next_black_36dp" />
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_alignTop="@+id/next"
+            android:layout_toLeftOf="@+id/next"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_play_arrow_black_36dp" />
+        <ImageButton
+            android:id="@+id/last"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/next"
+            android:layout_toLeftOf="@+id/play"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_skip_previous_black_36dp" />
+        <TextView
+            android:id="@+id/id_tv_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/next"
+            android:layout_toRightOf="@+id/id_iv_0"
+            android:layout_toLeftOf="@+id/last"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="歌曲名称"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/id_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/id_rl_0"
+        android:background="@drawable/chat_bg_default" >
+    </ListView>
+</RelativeLayout>
